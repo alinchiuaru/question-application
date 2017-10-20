@@ -1,0 +1,410 @@
+body {
+  background: url("BG_Desktop.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+:invalid {
+  box-shadow: none;
+}
+
+button, .item-action, .new-answer-container > .circle {
+  cursor: pointer;
+}
+
+button:hover, .item-action:hover, .new-answer-container > .circle:hover {
+  filter: brightness(110%);
+}
+
+/* PLUS BUTTON */
+.plus {
+  position: relative;
+}
+.plus > hr.minus:first-of-type {
+  position: absolute;
+}
+.plus > hr.minus:nth-of-type(2) {
+  transform: rotate(90deg);
+}
+/* PLUS BUTTON */
+
+
+
+.logo {
+  width: 194px;
+  height:70px;
+  margin-bottom: 15px;
+}
+
+/* SECTION STUFF */
+section:first-of-type {
+  margin-bottom: 37px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title > h1 {
+  font-family: 'Arial';
+  font-weight: 100;
+  font-size: 22px;
+  color: white;
+  margin: 10px 15px;
+}
+
+hr.title-wrap {
+  border: 0;
+  height: 1px;
+  width: 77px;
+  background: white;
+  margin: 0;
+}
+/* SECTION STUFF */
+
+hr.minus {
+    border: 0;
+    height: 4px;
+    width: 25px;
+    background: #D1D446;
+}
+
+
+.items {
+  margin-bottom: 55px;
+}
+
+.container {
+  width: 1152px;
+  height: 1152px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.input-container {
+  display: flex;
+  width: 688px;
+}
+
+.custom-input {
+  width: 583px;
+  height: 50px;
+  font-family: 'Arial';
+  font-size: 16px;
+  color: #2e353f;
+  padding: 0 25px;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.custom-input:disabled {
+  color: #8b8b8b;
+  background: #D8D9DC;
+}
+
+.custom-input::placeholder {
+  color: #2e353f;
+}
+
+.input-action {
+  font-family: 'Arial';
+  font-weight: bold;
+  font-size: 16px;
+  color: #2e353f;
+  background-color: #D1D446;
+  height: 50px;
+  width: 105px;
+  padding: 0;
+  border: 0;
+}
+
+.input-action.primary {
+  background-color: #c5b3d5;
+}
+
+.input-action.secondary {
+  background-color: #64D5F9;
+}
+
+.item-container {
+  display: flex;
+  width: 688px;
+  align-items: center;
+  height: 160px;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+  padding-left: 78px;
+  padding-right: 78px;
+}
+
+.item-container:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.item-container:first-of-type {
+  border-top: 1px solid white;
+  margin-top: 53px;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.item-info > .title {
+  font-family: 'Arial';
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.circle {
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+}
+
+.circle.circle-medium {
+  width: 93px;
+  height: 93px;
+}
+
+.circle.circle-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  color: #D1D446;
+  border: 2px solid #D1D446;
+}
+
+
+/*  ADD ANSWERRRRR */
+
+.new-answer-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 33px;
+}
+
+.input-action.add-answer {
+  height: 58px;
+  width: 110px;
+}
+
+.add-answer-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 688px;
+  height: 60px;
+  border: 1px solid white;
+  box-sizing: border-box; 
+}
+
+.add-answer-container .inputs-container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.file-input {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid white;
+  height: 100%;
+  flex-grow: 1;
+  font-family: 'Arial';
+  font-size: 14px;
+  color: white;
+}
+
+
+.file-upload {
+  width: 152px;
+  height: 38px;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.file-upload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    height: 100%;
+}
+
+
+.answer-input-container {
+  display: flex;
+  flex-grow: 1;
+}
+
+input.custom-transparent {
+  background: transparent;
+  border: 0;
+  font-size: 14px;
+  color: white;
+  flex-grow: 1;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+input.custom-transparent::placeholder {
+  color: white;
+}
+
+input.custom-transparent:focus {
+  outline: none;
+}
+
+
+@media only screen and (max-device-width: 768px) {
+  body {
+    background: url("BG_Mobile.png") no-repeat center center fixed; 
+  }
+  .container {
+    width: 750px;
+    height: 1334px;
+  }
+
+  .input-container {
+    width: 636px;
+    height: 154px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-container .input-action {
+    width: auto;
+    height: 60px;
+    font-size: 22px;
+  }
+
+  .input-container .custom-input {
+    width: auto;
+    height: 94px;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .item-container {
+    width: 636px;
+    padding-right: 33px;
+    padding-left: 33px;
+  }
+
+  .circle.circle-medium {
+    width: 119px;
+    height: 119px;
+  }
+
+  .circle.circle-small {
+    width: 87px;
+    height: 87px;
+  }
+
+  .item-info > .title {
+    font-size: 55px;
+    margin-left: 53px;
+  }
+
+  .new-answer-container > .circle.circle.circle-small {
+    width: 126px;
+    height: 126px;
+  }
+
+  .file-upload {
+    width: 277px;
+    height: 75px;
+  }
+
+  hr.minus {
+    height: 5px;
+    width: 32px;
+  }
+
+  .plus > hr.minus {
+    height: 8px;
+    width: 39px;
+  }
+
+  .section-title > h1 {
+    font-size: 33px;
+  }
+
+  hr.title-wrap {
+    height: 2px;
+  }
+
+  section:first-of-type {
+    margin-bottom: 20px;
+  }
+
+  .add-answer-container {
+    width: 636px;
+    height: 118px;
+    border: none;
+  }
+
+  .add-answer-container .inputs-container {
+    border: 1px solid white;
+    box-sizing: border-box;
+  }
+  
+  .file-input {
+    justify-content: center;
+  }
+
+  .file-input > span {
+    display: none;
+  }
+
+  .add-answer-container .inputs-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .input-action.add-answer {
+    flex-grow: 1;
+    margin-bottom: 49px;
+  }
+
+  .answer-input-container {
+    width: 50%;
+    flex-grow: 0;
+  }
+
+  .file-upload > span {
+    font-size: 20px;
+  }
+
+  input.custom-transparent {
+    font-size: 26px;
+    text-align: center;
+  }
+}
