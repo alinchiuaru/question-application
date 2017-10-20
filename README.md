@@ -1,17 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+<br>
 
-Below you will find some information on how to perform common tasks.<br>
+
+#### Start
+Clone/download the repo and run the following 2 commands: *npm install* followed by *npm start*
 
 
-## Useful commands
+<br>
 
-### `npm start`
+
+
+#### `npm start`
 
 Runs the app in the development mode.<br>
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+#### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
