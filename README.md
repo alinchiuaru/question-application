@@ -1,14 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+Also it includes:
+ * Redux (w/ React-Redux)
+ * Redux-Thunk
+ * Enzyme 3.x
 <br>
 
 
 #### Start
-Clone/download the repo and run the following 2 commands: *npm install* followed by *npm start*
+Clone/download the repo and run the following 2 commands: **`npm install`** followed by **`npm start`**
 
 
 <br>
 
-
+#### Useful commands
 
 #### `npm start`
 
