@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should render App correctly 1`] = `
+<div
+  className="container"
+>
+  <img
+    alt="logo"
+    className="logo"
+    src="logo.png"
+  />
+  <Connect(Question) />
+  <Connect(Answers) />
+</div>
+`;

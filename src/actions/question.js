@@ -6,30 +6,11 @@ export const UPDATE_QUESTION = 'UPDATE_QUESTION';
 
 const LocalStorage = new LocalStorageService();
 
-function receiveQuestion(data) {
-    return {
-        type: RECEIVE_QUESTION,
-        data
-    }
-}
-
-function formatResponse(response) {
-    const { text, imageURL } = response.data.question;
-
-    return {
-        text,
-        imageURL,
-        answers: response.data.answers
-    };
-}
-
 export function updateQuestion(text) {
-    return dispatch => {
-        dispatch({
-            type: UPDATE_QUESTION,
-            text
-        })
-    }
+    return {
+        type: UPDATE_QUESTION,
+        text
+    };
 }
 
 export function fetchQuestion() {
@@ -46,4 +27,21 @@ export function fetchQuestion() {
                 });
         }
     }
+}
+
+function receiveQuestion(data) {
+    return {
+        type: RECEIVE_QUESTION,
+        data
+    }
+}
+
+function formatResponse(response) {
+    const { text, imageURL } = response.data.question;
+
+    return {
+        text,
+        imageURL,
+        answers: response.data.answers
+    };
 }

@@ -32,7 +32,7 @@ class QuestionItem extends Component {
     render() {
         return (
             <section>
-                <img src={this.props.imageURL} className="circle" alt="Question Image" />
+                <img src={this.props.imageURL} className="circle" alt="main-question" />
                 
                 <div className="section-title">
                     <hr className="title-wrap" />

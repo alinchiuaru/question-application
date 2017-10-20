@@ -6,10 +6,6 @@ import AddAnswerForm from '../components/AddAnswerForm';
 import { addAnswer, removeAnswer } from '../actions/answers';
 
 class Answers extends Component {
-    constructor(props) {
-        super(props);
-    }
-    
     removeAnswer = (text) => {
         this.props.removeAnswer(text);
     }

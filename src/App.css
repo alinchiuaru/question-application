@@ -209,7 +209,6 @@ hr.minus {
 
 .add-answer-container {
   display: flex;
-  flex-wrap: wrap;
   width: 688px;
   height: 60px;
   border: 1px solid white;
@@ -368,6 +367,7 @@ input.custom-transparent:focus {
   .add-answer-container {
     width: 636px;
     height: 118px;
+    flex-wrap: wrap;
     border: none;
   }
 
