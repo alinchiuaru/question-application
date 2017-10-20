@@ -7,9 +7,6 @@ import rootReducer from './reducers/rootReducer';
 import App from './App';
 import LocalStorageService from './services/localStorageService';
 
-import { BrowserRouter, Route } from 'react-router-dom';
-
-
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(rootReducer);
 const LocalStorage = new LocalStorageService();
