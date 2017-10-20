@@ -21,11 +21,7 @@ store.subscribe(function() {
 
 ReactDOM.render(
     <Provider store={store}>
-        <BrowserRouter>
-            <div>
-                <Route exact path="/" component={App} />
-            </div>
-        </BrowserRouter>
+        <App />
     </Provider>,
     document.getElementById('root')
 );
