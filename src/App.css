@@ -32,10 +32,17 @@ button:hover, .item-action:hover, .new-answer-container > .circle:hover {
 
 
 
-.logo {
+.logo-container {
   width: 194px;
-  height:70px;
+  height: 70px;
   margin-bottom: 15px;
+}
+
+.logo {
+  max-width: 194px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
 }
 
 /* SECTION STUFF */

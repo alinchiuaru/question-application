@@ -8,7 +8,9 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <img className="logo" src={logo} alt="logo" />
+        <div className="logo-container">
+          <img className="logo" src={logo} alt="logo" />
+        </div>
         <Question />
         <Answers />
       </div>
