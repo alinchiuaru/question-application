@@ -1,19 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+### This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Also it includes:
+#### Also it includes:
  * Redux (w/ React-Redux)
  * Redux-Thunk
  * Enzyme 3.x
 <br>
 
 
-#### Start
-Clone/download the repo and run the following 2 commands: **`npm install`** followed by **`npm start`**
+## Start
+
+* Clone/download the repo and run the following 2 commands: **`npm install`** followed by **`npm start`**.
+* The webpack server should start on **`localhost:3000`**.
 
 
 <br>
 
-#### Useful commands
+## Useful commands
 
 #### `npm start`
 
