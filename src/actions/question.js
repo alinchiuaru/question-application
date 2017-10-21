@@ -18,7 +18,8 @@ export function fetchQuestion() {
     if (questionData) {
         return dispatch => dispatch(receiveQuestion(questionData));
     } else {
-        const request = axios.get('https://s3-us-west-2.amazonaws.com/toluna-frontend-developer-test/data.json');
+        // const request = axios.get('https://s3-us-west-2.amazonaws.com/toluna-frontend-developer-test/data.json');
+        const request = axios.get('https://demo3989710.mockable.io/question');
 
         return (dispatch) => {
             request
